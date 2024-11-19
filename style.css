@@ -9,7 +9,7 @@ body{
     font-family:"Inter", sans-serif;
 }
 header{
-    background-image: url(imagens/fundo.png);
+    background-image: url(assets/fundo.png);
     background-size: cover;
     width: 100%;
     height: 100dvh;
@@ -64,9 +64,11 @@ header{
             margin-bottom: 50px;
         }
 
-        & button{
+        & a{
             color: #fff;
+            text-decoration: none;
             background-color: transparent;
+            border: solid;
             border-width: 1px;
             border-color: #fff;
             padding: 20px;
@@ -75,9 +77,79 @@ header{
             transition: .5s;
         }
 
-        & button:hover{
+        & a:hover{
             background-color: #fff;
             color: #072351;
         }
     }
 }
+
+main{
+    background: linear-gradient(to right, #0a2f5a, #010311);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100dvh;
+    
+    & .navButtons{
+        width: 75dvw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        & a{
+            color: #fff;
+            text-decoration: none;
+            text-align: center;
+            border: solid 1px #fff;
+            border-radius: 30px;
+            padding: 15px;
+            width: 100%;
+            margin-block: 10px;
+            text-transform: uppercase;
+            font-size: 20px;
+            transition: linear .3s;
+        }
+
+        & a:hover{
+            background-color: #fff;
+            color: #072351;
+        }
+    }
+}
+
+footer{
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 50px;
+
+    & .logo img{
+        height: 250px;
+    }
+
+    & .text{
+        display: flex;
+        align-items: start;
+        gap: 50px;
+        margin-right: 100px;
+
+        & .about, .names, .emails{
+            width: 250px;
+
+        }
+
+        & h2{
+            color: #fff;
+            text-transform: uppercase;
+        }
+
+        & p{
+            color: #fff;
+
+        }
+    }
+} 
+
