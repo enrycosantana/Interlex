@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="../index.html">
+          <img src="../assets/logo.svg" alt="interlex" />
+        </a>
+
+        <ul>
+          <li><a href="../alexa/index.html">Alexa</a></li>
+          <li><a href="./index.html">Arduino</a></li>
+          <li><a href="../ciencias/index.html">Ciências</a></li>
+          <li><a href="../estatisticas/index.html">Estátisticas</a></li>
+          <li><a href="../sociologia/index.html">Sociologia</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="firstPage">
+        <div class="content">
+          <h1>Arduino</h1>
+        </div>
+      </section>
+
+      <section class="content">
+        <div class="text-flex">
+          <img src="./image/img1.png" alt="" class="img2" />
+          <div class="text-content">
+            <p>
+              O Arduino é uma plataforma de prototipagem eletrônica de código
+              aberto que permite a criação de projetos inovadores com sensores e
+              atuadores. Com uma placa equipada com um microcontrolador e um
+              ambiente de desenvolvimento intuitivo, o Arduino é ideal para
+              entusiastas e profissionais que desejam explorar o mundo da
+              eletrônica e da programação. <br />
+              A integração do Arduino com a Alexaoferece uma nova dimensão de
+              controle para seus projetos. Imagine acender as luzes, ajustar a
+              temperatura ou ativar um ventilador apenas dizendo "Alexa, acenda
+              as luzes da sala". Com a Alexa, você pode controlar dispositivos
+              conectados ao Arduino com a simplicidade de um comando de voz.
+              <br />
+              Principais Componentes do Arduino:
+              <li>
+                Placas de Circuito: O núcleo do Arduino é uma placa com um
+                microcontrolador (como o ATmega328 em uma placa Arduino Uno).
+                Existem vários modelos de placas, cada uma com características e
+                capacidades específicas, como o Arduino Mega, que possui mais
+                entradas e saídas digitais e analógicas, e o Arduino Nano,
+                conhecido por seu tamanho compacto.
+              </li>
+              <li>
+                Ambiente de Desenvolvimento (IDE): O Arduino IDE é um software
+                de código aberto usado para escrever e carregar código nas
+                placas Arduino. O código é escrito em uma linguagem baseada em
+                C/C++ e pode ser facilmente carregado na placa via USB.
+              </li>
+              <li>
+                Bibliotecas e Shields: O Arduino possui uma vasta gama de
+                bibliotecas de software que facilitam a integração com sensores,
+                atuadores e outros componentes eletrônicos. Os shields são
+                placas adicionais que podem ser empilhadas sobre a placa Arduino
+                para adicionar funcionalidades específicas, como conectividade
+                Wi-Fi, controle de motores e muito mais.
+              </li>
+              <li>
+                Sensores e Atuadores: O Arduino pode ser conectado a uma
+                variedade de sensores (como sensores de temperatura e umidade) e
+                atuadores (como LEDs e motores), permitindo a construção de
+                projetos que reagem a estímulos do ambiente.
+              </li>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="contentPag2">
+        <div class="text-flex">
+          <img src="./image/img2.webp" alt="" />
+          <div class="text">
+            <h1>Desenvolvimento de protótipo no Tinkercad</h1>
+            <p>
+              Tinkercad é uma plataforma online de design 3D desenvolvida pela
+              Autodesk, conhecida por sua interface intuitiva e fácil de usar.
+              Lançado em 2011, o Tinkercad é amplamente utilizado por iniciantes
+              e educadores no campo da modelagem 3D, impressão 3D e eletrônica.
+            </p>
+
+            <h1>Principais recursos e características do Tinkercad</h1>
+            <p>
+              - Modelagem 3D <br />
+              - Simulação de Circuitos <br />
+              - Programação <br />
+              - Integração com Impressoras 3D <br />
+              - Acessibilidade <br />
+              - Educação e Comunidade
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="contentPag3">
+        <h1 class="h1dd">Processos do Sistema</h1>
+        <div class="contentPag3Div">
+          <div class="content">
+            <div class="flip">
+              <div class="card-frente">
+                <h1>COLETA DE DADOS</h1>
+              </div>
+              <div class="card-tras">
+                <p>
+                  O medidor de corrente sct-013 mede os niveis de corrente de
+                  energia que passam por ele e entrega ao outros componentes do
+                  prototipo.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="content">
+            <div class="flip">
+              <div class="card-frente">
+                <h1>INTEGRAÇÃO COM ALEXA</h1>
+              </div>
+              <div class="card-tras">
+                <p>
+                  O ESP32 recebe a informação e envia por meio deste link:
+                  https://dl.espressif .com/dl/package _esp32_index.json para a
+                  alexa.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="content">
+            <div class="flip">
+              <div class="card-frente">
+                <h1 class="h1d">PROCESSAMENTO E CONVERSÃO</h1>
+              </div>
+              <div class="card-tras">
+                <p>
+                  Alexa recebe a informação pelo Aplicativo Sinric Pro que pode
+                  ser instalado pelo Soft Skills da Alexa, onde ele vai
+                  realizara conversão de kWh em Reais.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="content">
+            <div class="flip">
+              <div class="card-frente">
+                <h1>RELATÓRIO AO USUÁRIO</h1>
+              </div>
+              <div class="card-tras">
+                <p>
+                  Alexa por meio de uma interface de voz entrega os kWh em reais
+                  e o quanto aquela medição de energia está sendo utilizada.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="logo">
+        <img src="../assets/logo2.svg" alt="" />
+      </div>
+      <div class="text">
+        <div class="about">
+          <h2>Sobre</h2>
+          <p>Projeto interdisciplinar desenvolvido na ETEC Taboão da Serra</p>
+        </div>
+        <div class="names">
+          <h2>Nomes</h2>
+          <p>Bernard Ramos Silva</p>
+          <p>Bianca Santos Barboza</p>
+          <p>Bruna Santos da Silva</p>
+          <p>Enryco Kaleb da Silva Santana</p>
+          <p>Gabrielle Souza Damazio</p>
+        </div>
+        <div class="emails">
+          <h2>E-mail</h2>
+          <p>bernard.silva@etec.sp.gov.br</p>
+          <p>bianca.barboza4@etec.sp.gov.br</p>
+          <p>bruna.silva1989@etec.sp.gov.br</p>
+          <p>enryco.santana@etec.sp.gov.br</p>
+          <p>gabrielle.damazio@etec.sp.gov.br</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

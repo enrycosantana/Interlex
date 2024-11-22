@@ -1,0 +1,243 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
+
+body {
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 50px;
+  background-color: #000;
+
+  & img {
+    height: 100px;
+  }
+
+  & ul {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+
+    & li {
+      list-style: none;
+
+      & a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 22px;
+      }
+    }
+  }
+}
+
+.firstPage {
+  height: 90dvh;
+  background: linear-gradient(to right, #0a2f5a, #010311);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  & .content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    & h1 {
+      color: #fff;
+      font-size: 150px;
+      text-transform: uppercase;
+      font-family: "Audiowide", sans-serif;
+      margin: 0;
+    }
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-block: 50px;
+}
+
+.text-flex {
+  width: 67vw;
+  display: flex;
+  align-items: center;
+  gap: 70px;
+
+  & h1 {
+    font-size: 45px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  & p {
+    font-size: 19px;
+    text-align: justify;
+  }
+
+  & li {
+    font-size: 19px;
+    text-align: justify;
+  }
+
+  & .img2 {
+    object-fit: cover;
+    height: 700px;
+    width: 300px;
+  }
+}
+
+.contentPag2 {
+  background: linear-gradient(to right, #0a2f5a, #010311);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-block: 30px;
+
+  & .text-flex {
+    display: flex;
+    width: 67vw;
+
+    & img {
+      height: 200px;
+      border-radius: 100px;
+    }
+    & .text {
+      & h1 {
+        font-size: 29px;
+        text-align: justify;
+        text-transform: initial;
+        color: #fff;
+        margin: 0;
+      }
+
+      & p {
+        font-size: 19px;
+        text-align: justify;
+        color: #fff;
+      }
+    }
+  }
+}
+
+.contentPag3 {
+  & .h1dd {
+    text-align: center;
+    font-size: 45px;
+    text-transform: uppercase;
+  }
+
+  .contentPag3Div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin: 50px;
+    & .content {
+      position: relative;
+      width: 220px;
+      height: 300px;
+      margin: 0;
+      padding: 0;
+
+      & .flip {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+        transform-style: preserve-3d;
+        transition: 0.5s;
+
+        & .card-frente,
+        .card-tras {
+          background: linear-gradient(to bottom, #0a2f5a, #010311);
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          border-radius: 20px;
+          box-shadow: 0px 0px 10px #0000001b;
+          backface-visibility: hidden;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        & .card-frente {
+          & h1 {
+            width: 80%;
+            color: #fff;
+            text-align: center;
+          }
+
+          & .h1d {
+            width: 100%;
+            color: #fff;
+            text-align: center;
+          }
+        }
+
+        & .card-tras {
+          transform: rotateY(180deg);
+
+          & p {
+            width: 80%;
+            color: #fff;
+            text-align: center;
+            font-size: 19px;
+          }
+        }
+      }
+    }
+
+    & .content:hover .flip {
+      transform: rotateY(180deg);
+    }
+  }
+}
+
+footer {
+  background-color: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 50px;
+
+  & .logo img {
+    height: 250px;
+    width: 350px;
+    object-fit: cover;
+  }
+
+  & .text {
+    display: flex;
+    align-items: start;
+    gap: 50px;
+    margin-right: 100px;
+
+    & .about,
+    .names,
+    .emails {
+      width: 250px;
+    }
+
+    & h2 {
+      color: #fff;
+      text-transform: uppercase;
+    }
+
+    & p {
+      color: #fff;
+    }
+  }
+}
