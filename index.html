@@ -1,68 +1,81 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Interlex</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="./assets/logo.svg" type="image/x-icon">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="./assets/logo.svg" type="image/x-icon" />
+  </head>
+  <body>
     <header>
-        <nav>
-            <a href="./assets/Integração com Alexa - Artigo certo 1.pdf">
-                <img src="./assets/logo.svg" alt="interlex">
-            </a>
+      <nav>
+        <a href="./assets/Integração com Alexa - Artigo certo 1.pdf">
+          <img src="./assets/logo.svg" alt="interlex" />
+        </a>
 
-            <ul>
-                <li><a href="./alexa/index.html">Alexa</a></li>
-                <li><a href="./arduino/index.html">Arduino</a></li>
-                <li><a href="./ciencias/index.html">Ciências</a></li>
-                <li><a href="./estatisticas/index.html">Estátisticas</a></li>
-                <li><a href="./sociologia/index.html">Sociologia</a></li>
-            </ul>
-        </nav>
-        <div class="text">
-            <h1>INTERNET DAS <br> COISAS</h1>
-            <span>Alexa</span>
-            <a href="./saibamais/index.html">Saiba mais</a>
-        </div>
+        <ul>
+          <li><a href="./alexa/index.html">Alexa</a></li>
+          <li><a href="./arduino/index.html">Arduino</a></li>
+          <li><a href="./ciencias/index.html">Ciências</a></li>
+          <li><a href="./estatisticas/index.html">Estátisticas</a></li>
+          <li><a href="./sociologia/index.html">Sociologia</a></li>
+        </ul>
+      </nav>
+      <div class="text">
+        <h1>
+          INTERNET DAS <br />
+          COISAS
+        </h1>
+        <span>Alexa</span>
+        <a href="./saibamais/index.html">Saiba mais</a>
+      </div>
     </header>
     <main>
-        <div class="navButtons">
-            <a href="">Alexa</a>
-            <a href="">Arduino</a>
-            <a href="">Ciências</a>
-            <a href="">Estátisticas</a>
-            <a href="">Sociologia</a>
-        </div>
+      <div class="navButtons">
+        <a href="">Alexa</a>
+        <a href="">Arduino</a>
+        <a href="">Ciências</a>
+        <a href="">Estátisticas</a>
+        <a href="">Sociologia</a>
+      </div>
     </main>
     <footer>
-        <div class="logo">
-            <img src="./assets/logo2.svg" alt="">
+      <div class="logo">
+        <img src="./assets/logo2.svg" alt="" />
+      </div>
+      <div class="text">
+        <div class="about">
+          <h2>Sobre</h2>
+          <p>Projeto interdisciplinar desenvolvido na ETEC Taboão da Serra</p>
         </div>
-        <div class="text">
-            <div class="about">
-                <h2>Sobre</h2>
-                <p>Projeto interdisciplinar desenvolvido na ETEC Taboão da Serra</p>
-            </div>
-            <div class="names">
-                <h2>Nomes</h2>
-                <p>Bernard Ramos Silva</p>
-                <p>Bianca Santos Barboza</p>
-                <p>Bruna Santos da Silva</p>
-                <p>Enryco Kaleb da Silva Santana</p>
-                <p>Gabrielle Souza Damazio</p>
-            </div>
-            <div class="emails">
-                <h2>E-mail</h2>
-                <p>bernard.silva@etec.sp.gov.br</p>
-                <p>bianca.barboza4@etec.sp.gov.br</p>
-                <p>bruna.silva1989@etec.sp.gov.br</p>
-                <p>enryco.santana@etec.sp.gov.br</p>
-                <p>gabrielle.damazio@etec.sp.gov.br</p>
-            </div>
+        <div class="names">
+          <h2>Nomes</h2>
+          <p>Bernard Ramos Silva</p>
+          <p>Bianca Santos Barboza</p>
+          <p>Bruna Santos da Silva</p>
+          <p>Enryco Kaleb da Silva Santana</p>
+          <p>Gabrielle Souza Damazio</p>
         </div>
+        <div class="emails">
+          <h2>E-mail</h2>
+          <p>bernard.silva@etec.sp.gov.br</p>
+          <p>bianca.barboza4@etec.sp.gov.br</p>
+          <p>bruna.silva1989@etec.sp.gov.br</p>
+          <p>enryco.santana@etec.sp.gov.br</p>
+          <p>gabrielle.damazio@etec.sp.gov.br</p>
+        </div>
+      </div>
     </footer>
-</body>
+    <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      new window.VLibras.Widget("https://vlibras.gov.br/app");
+    </script>
+  </body>
 </html>
